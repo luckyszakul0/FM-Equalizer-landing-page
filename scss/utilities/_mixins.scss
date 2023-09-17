@@ -1,0 +1,14 @@
+@use './variables' as *;
+
+@mixin typography($fontSize, $lineHeight, $fontColor: $lightBlack){
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $fontColor;
+}
+
+@mixin flex($justify, $align, $direction: row){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}

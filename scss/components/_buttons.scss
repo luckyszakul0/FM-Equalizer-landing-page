@@ -1,0 +1,31 @@
+@use '../utilities' as *;
+
+.btn{
+    @include typography(1.125rem, 2rem);
+    font-weight: 700;
+    width: 80%;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    &_ios{
+        @extend .btn;
+        background: $lightBlack;
+        color: $snowWhite;
+
+        &:hover{
+            background: $teal;
+        }
+    }
+
+    &_android{
+        @extend .btn;
+        background: $snowWhite;
+
+        &:hover{
+            background: $warmYellow;
+        }
+    }
+}

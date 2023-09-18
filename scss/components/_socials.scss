@@ -1,0 +1,16 @@
+@use '../utilities' as *;
+
+.socials{
+    &_links:first-child{
+        border-radius: 0.2rem;
+        overflow: hidden;
+    }
+
+    &_links svg path{
+        transition: all 0.3s;
+    }
+
+    &_links:hover svg path{
+        fill: $tomatoOrange;
+    }
+}

@@ -1,0 +1,12 @@
+@use '../utilities' as *;
+
+.attribution{
+    font-size: 0.65rem;
+    text-align: center;
+    color: $lightBlack;
+    z-index: 150;
+    opacity: 0.75;
+}
+.attribution a{
+    color: hsl(228, 45%, 44%);
+}

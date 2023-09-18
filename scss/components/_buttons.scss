@@ -2,12 +2,15 @@
 
 .btn{
     @include typography(1.125rem, 2rem);
+    @include flex(center, center);
+    gap: 0.5rem;
     font-weight: 700;
-    width: 80%;
+    width: 100%;
     text-align: center;
-    padding: 1rem;
+    padding: 0.85rem;
     border-radius: 0.75rem;
     cursor: pointer;
+    border: none;
     transition: all 0.3s;
 
     &_ios{

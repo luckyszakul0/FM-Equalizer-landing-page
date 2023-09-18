@@ -5,13 +5,14 @@
 
     &_primary{
         @extend .heading;
-        @include typography(5.5rem, 5.5rem);
-        letter-spacing: -0.0625rem;
+        @include typography(2.5rem, 3rem, -0.028125rem);
+        //@include typography(5.5rem, 5.5rem, -0.0625rem);
     }
 
     &_secondary{
         @extend .heading;
-        @include typography(2.5rem, 3.25rem);
+        @include typography(2rem, 2.5rem);
+        //@include typography(2.5rem, 3.25rem);
     }
 }
 
@@ -20,7 +21,8 @@
 
     &_main{
         @extend .text;
-        @include typography(1.25rem, 2.125rem);
+        @include typography(1rem, 1.625rem);
+        //@include typography(1.25rem, 2.125rem);
     }
 
     &_footer{
@@ -29,6 +31,7 @@
 
         a{
             @extend .text_footer;
+            color: $lightBlack;
             position: relative;
             text-decoration: none;
             font-weight: 700;

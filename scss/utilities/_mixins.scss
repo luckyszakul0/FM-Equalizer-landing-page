@@ -1,9 +1,9 @@
 @use './variables' as *;
 
-@mixin typography($fontSize, $lineHeight, $fontColor: $lightBlack){
+@mixin typography($fontSize, $lineHeight, $letterSpacing: normal){
     font-size: $fontSize;
     line-height: $lineHeight;
-    color: $fontColor;
+    letter-spacing: $letterSpacing;
 }
 
 @mixin flex($justify, $align, $direction: row){

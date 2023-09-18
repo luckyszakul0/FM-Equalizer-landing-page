@@ -1,0 +1,16 @@
+@use '../utilities' as *;
+
+#bg_pattern_1{
+    display: none;
+}
+
+.logo{
+    &_top{
+        margin-bottom: 3.75rem;
+    }
+}
+
+.header_main{
+    @include flex(center, center, column);
+    gap: 1.25rem;
+}

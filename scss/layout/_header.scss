@@ -9,7 +9,26 @@
 }
 
 .header_main{
+    max-width: 70%;
     @include flex(center, center, column);
     gap: 1.25rem;
     margin: 0 1.5rem 10rem 1.5rem;
+}
+
+@media screen and (min-width: 550px){
+    #bg_pattern_1{
+        display: block;
+        max-width: 32%;
+        position: absolute;
+        right: -3.5%;
+        top: -3.5%;
+    }
+
+    .logo_top{
+        margin: 3.5rem 2.75rem 4.5rem 2.75rem;
+    }
+
+    .header_main{
+        margin: 0 2.75rem 12.5rem 2.75rem;
+    }
 }

@@ -13,8 +13,13 @@
     @include flex(center, center, column);
     gap: 1.25rem;
     margin: 0 1.5rem 10rem 1.5rem;
+
+    .heading_primary{
+        z-index: 100;
+    }
 }
 
+//tablet design
 @media screen and (min-width: 550px){
     #bg_pattern_1{
         display: block;

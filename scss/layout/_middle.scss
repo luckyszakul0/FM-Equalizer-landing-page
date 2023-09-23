@@ -12,6 +12,7 @@
         top: 0;
         left: 50%;
         height: 430px;
+        // opacity: 0;
     }
 
     #bg_pattern_2{
@@ -19,6 +20,7 @@
     }
 
     .orange_section{
+        z-index: 100;
         width: 100%;
         position: absolute;
         transform: translateX(-50%);
@@ -51,6 +53,28 @@
             width: 100%;
             @include flex(center, center, column);
             gap: 1rem;
+        }
+    }
+
+    @media screen and (min-width: 550px) {
+        margin: 0 2.75rem 0 2.75rem;
+        padding-bottom: 8rem;
+
+        .orange_section{
+            width: 50%;
+            // opacity: 0;
+            top: 27.5%;
+            left: 65%;
+        }
+
+        #bg_pattern_2{
+            max-width: 350px;
+            transform: translate(15%, -10%);
+        }
+
+        #equalizer_app{
+            height: 600px;
+            left: 30%;
         }
     }
 }

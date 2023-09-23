@@ -1,6 +1,7 @@
 @use '../utilities' as *;
 
-body{
+html, body{
+    overflow-x: hidden;
     color: $lightBlack;
     font-family: 'IBM Plex Sans', sans-serif;
     width: 100vw;

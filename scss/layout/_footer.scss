@@ -27,3 +27,14 @@
 .attribution a{
     color: hsl(228, 45%, 44%);
 }
+
+@media screen {
+    .footer{
+        margin: 11rem 2.75rem 2rem 2.75rem;
+        @include flex(space-between, center);
+
+        &_text{
+            width: 60%;
+        }
+    }
+}

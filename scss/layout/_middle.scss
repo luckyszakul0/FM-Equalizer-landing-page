@@ -20,11 +20,11 @@
 
     .orange_section{
         z-index: 100;
-        width: 100%;
+        width: 100vw;
         position: absolute;
-        transform: translateX(-50%);
+        // transform: translateX(-50%);
         top: 90%;
-        left: 49.75%;
+        // left: 49.75%;
         background: $tomatoOrange;
         color: $snowWhite;
         border-radius: 0.75rem;
@@ -34,7 +34,7 @@
 
         .text_section{
             @include flex(center, flex-start, column);
-            gap: 0.85rem;
+            gap: 1rem;
         }
 
         .price{
@@ -60,10 +60,16 @@
         padding-bottom: 8rem;
 
         .orange_section{
-            width: 50%;
+            width: 60%;
             top: 27.5%;
             left: 65%;
             padding: 4rem 3.5rem 3rem 3.5rem;
+            transform: translateX(-50%);
+            // left: 49.75%;
+
+            .text_section{
+                gap: 2rem;
+            }
         }
 
         #bg_pattern_2{
@@ -74,6 +80,12 @@
         #equalizer_app{
             height: 600px;
             left: 30%;
+        }
+    }
+
+    @media screen and (min-width: 800px) {
+        .orange_section{
+            width: 50%;
         }
     }
 
@@ -94,7 +106,7 @@
             left: 22.5%;
         }
     }
-    
+
     @media screen and (min-width: 1250px) {
         .orange_section{
             width: 39%;

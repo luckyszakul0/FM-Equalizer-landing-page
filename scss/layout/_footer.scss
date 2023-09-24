@@ -9,6 +9,7 @@
 }
 
 .socials{
+    width: 30%;
     margin-top: 3.5rem;
     margin-bottom: 4rem;
     @include flex(flex-start, center);
@@ -37,6 +38,10 @@
             width: 60%;
         }
     }
+
+    .socials{
+        justify-content: flex-end;
+    }
 }
 
 @media screen and (min-width: 1050px) {
@@ -44,9 +49,13 @@
         margin: 11rem 10rem 3rem 10rem;
 
         &_text{
-            width: 70%;
-            @include flex(center, flex);
-            gap: 8rem
+            width: fit-content;
+            @include flex(flex-start, center);
+            gap: 8rem;
+
+            .text_footer{
+                width: 45%;
+            }
         }
     }
 }

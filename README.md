@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontend Mentor solution](https://www.frontendmentor.io/solutions/mobilefirst-equalizer-page-using-scss-Wso5oVGi8O)
+- Live Site URL: [Github Pages](https://luckyszakul0.github.io/FM-Equalizer-landing-page/)
 
 ## My process
 

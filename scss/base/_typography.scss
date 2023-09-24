@@ -1,9 +1,6 @@
 @use '../utilities' as *;
 
 
-// the 550px breakpoint is for use on tablets
-
-
 .heading{
     font-weight: 700;
 
@@ -11,7 +8,7 @@
         @extend .heading;
         @include typography(2.5rem, 3rem, -0.028125rem);
 
-        @media screen and (min-width: 550px) {
+        @media screen and (min-width: 650px) {
             @include typography(4rem, 4rem, -0.045625rem)
         }
         //@include typography(5.5rem, 5.5rem, -0.0625rem);
@@ -34,7 +31,7 @@
         @extend .text;
         @include typography(1rem, 1.625rem);
 
-        @media screen and (min-width: 550px) {
+        @media screen and (min-width: 650px) {
             @include typography(1.125rem, 1.75rem)
         }
         //@include typography(1.25rem, 2.125rem);

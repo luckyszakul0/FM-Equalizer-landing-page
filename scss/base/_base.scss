@@ -11,7 +11,7 @@ html, body{
     background-repeat: no-repeat;
     background-position: top -225px right -225px;
 
-    @media screen and (min-width: 450px) {
+    @media screen and (min-width: 650px) {
         background-image: url('../assets/bg-main-tablet.png');
         background-position: top -350px right -225px;
     }

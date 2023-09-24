@@ -28,7 +28,7 @@
     color: hsl(228, 45%, 44%);
 }
 
-@media screen {
+@media screen and (min-width: 650px) {
     .footer{
         margin: 11rem 2.75rem 2rem 2.75rem;
         @include flex(space-between, center);

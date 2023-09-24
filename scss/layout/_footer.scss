@@ -38,3 +38,15 @@
         }
     }
 }
+
+@media screen and (min-width: 1050px) {
+    .footer{
+        margin: 11rem 10rem 3rem 10rem;
+
+        &_text{
+            width: 70%;
+            @include flex(center, flex);
+            gap: 8rem
+        }
+    }
+}

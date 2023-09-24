@@ -12,7 +12,6 @@
         top: 0;
         left: 50%;
         height: 430px;
-        // opacity: 0;
     }
 
     #bg_pattern_2{
@@ -31,7 +30,7 @@
         border-radius: 0.75rem;
         padding: 4rem 2.25rem 3rem 2.25rem;
         @include flex(center, flex-start, column);
-        gap: 1.5rem;
+        gap: 2.5rem;
 
         .text_section{
             @include flex(center, flex-start, column);
@@ -62,9 +61,9 @@
 
         .orange_section{
             width: 50%;
-            // opacity: 0;
             top: 27.5%;
             left: 65%;
+            padding: 4rem 3.5rem 3rem 3.5rem;
         }
 
         #bg_pattern_2{
@@ -75,6 +74,30 @@
         #equalizer_app{
             height: 600px;
             left: 30%;
+        }
+    }
+
+    @media screen and (min-width: 1050px) {
+        margin: 0 10rem 0 10rem;
+
+        .orange_section{
+            width: 50%;
+            left: 70%;
+            top: 17%;
+        }
+
+        #bg_pattern_2{
+            transform: translate(-21.5%, -10%);
+        }
+
+        #equalizer_app{
+            left: 22.5%;
+        }
+    }
+    
+    @media screen and (min-width: 1250px) {
+        .orange_section{
+            width: 39%;
         }
     }
 }

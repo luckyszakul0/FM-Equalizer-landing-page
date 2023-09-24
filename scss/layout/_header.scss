@@ -14,7 +14,7 @@
     gap: 1.25rem;
     margin: 0 1.5rem 10rem 1.5rem;
 
-    .heading_primary{
+    .heading_primary, .text_main{ //a style for making the bg pattern 1 go under the text for some screen widths that are close to the breakpoint
         z-index: 100;
     }
 }
@@ -26,7 +26,7 @@
         max-width: 32%;
         position: absolute;
         right: -3.5%;
-        top: -3.5%;
+        top: -5%;
     }
 
     .logo_top{
@@ -35,5 +35,21 @@
 
     .header_main{
         margin: 0 2.75rem 12.5rem 2.75rem;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    #bg_pattern_1{
+        right: 0;
+        max-width: 25%;
+    }
+
+    .logo_top{
+        margin: 3.5rem 10rem 5.5rem 10rem;
+    }
+
+    .header_main{
+        max-width: 60%;
+        margin: 0 10rem 15rem 10rem;
     }
 }

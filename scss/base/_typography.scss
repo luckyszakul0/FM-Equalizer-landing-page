@@ -6,21 +6,24 @@
 
     &_primary{
         @extend .heading;
-        @include typography(2.5rem, 3rem, -0.028125rem);
+        @include typography(2.5rem, 3rem, -0.028125rem);        //<-- font size for mobile design
 
         @media screen and (min-width: 650px) {
-            @include typography(4rem, 4rem, -0.045625rem)
+            @include typography(4rem, 4rem, -0.045625rem)       //<-- same for the tablets, etc.
         }
-        //@include typography(5.5rem, 5.5rem, -0.0625rem);
+
+        @media screen and (min-width: 1050px) {
+            @include typography(5.5rem, 5.5rem, -0.0625rem);    //<-- and for the desktops - the same trend continues down the file
+        }
     }
 
     &_secondary{
         @extend .heading;
         @include typography(2rem, 2.5rem);
 
-        // @media screen and (min-width: ) {
-        //     //@include typography(2.5rem, 3.25rem);
-        // }
+        @media screen and (min-width: 1050px) {
+            @include typography(2.5rem, 3.25rem);
+        }
     }
 }
 
@@ -34,7 +37,10 @@
         @media screen and (min-width: 650px) {
             @include typography(1.125rem, 1.75rem)
         }
-        //@include typography(1.25rem, 2.125rem);
+
+        @media screen and (min-width: 1050px) {
+            @include typography(1.25rem, 2.125rem);   
+        }
     }
 
     &_footer{
